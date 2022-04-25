@@ -77,6 +77,10 @@ Console.WriteLine("Zadej číslo");
 int cislo= int.Parse(Console.ReadLine());
 string vystup;
 
+   if ((cislo == 6) || (cislo == 7))
+{ 
+        Console.WriteLine("Zadal jsi vikend");
+
 switch (cislo)
 {
     case 1:
@@ -94,15 +98,18 @@ switch (cislo)
     case 5:
         Console.WriteLine("Patek");
         break;
+ 
     case 6: Console.WriteLine("Sobota");
+            
         break;
     case 7: Console.WriteLine("nedele");
+            
         break;
     default:
         vystup = "chyba";
         break;
-
-        Console.ReadKey();
+    }
+    Console.ReadKey();
 
 
 
