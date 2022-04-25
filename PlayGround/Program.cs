@@ -22,10 +22,9 @@ Console.ReadKey();
 
 /* Druha uloha*/
 /* prevod teploty
-double teplota;
 double prevod;
 Console.WriteLine("Zadej teplotu ve stupnich celsia");
-teplota = int.Parse(Console.ReadLine());
+double teplota = double.Parse(Console.ReadLine());
 prevod = ((1.8 * teplota) + 32);
 Console.WriteLine(prevod);
 Console.ReadKey();
@@ -52,18 +51,16 @@ Console.ReadKey();
 
 
 Console.WriteLine("Zadej tri cisla");
-double a;
-double b;
-double c;
-a = int.Parse(Console.ReadLine());
-b= int.Parse(Console.ReadLine());
-c = int.Parse(Console.ReadLine());
+
+ double a = double.Parse(Console.ReadLine());
+double b = double.Parse(Console.ReadLine());
+double c = double.Parse(Console.ReadLine());
 
 if (a > b)
 {
     if (a > c)
         Console.WriteLine("a je nejvetsi {0}", a);
-    else Console.WriteLine("c je nejvetsi {2}", c);
+    else Console.WriteLine("c je nejvetsi {1}", c);
 }
 else if (b > c)
 
@@ -72,7 +69,7 @@ else if (b > c)
 }
 else
 {
-    Console.WriteLine("c je nejvetsi {2}", c);
+    Console.WriteLine("c je nejvetsi {0}", c);
 }
 
 
