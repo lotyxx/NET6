@@ -73,6 +73,8 @@ else
 }
 */
 
+/* switch uloha
+
 Console.WriteLine("Zadej číslo");
 int cislo= int.Parse(Console.ReadLine());
 string vystup;
@@ -110,11 +112,32 @@ switch (cislo)
         break;
     }
     Console.ReadKey();
-
-
-
-
-
-
-
+    */
+/*int opakovani = 10;
+    for (int i = 0; i < opakovani;i++)
+{
+    Console.WriteLine(i);
 }
+
+int a = 10;
+while (a >0)
+{
+    Console.WriteLine(a);
+    a--;
+}
+
+*/
+
+Console.WriteLine("Zadej cislo");
+int cislo;
+int vysledek = 0;
+cislo=int.Parse(Console.ReadLine());
+for( int i=0;i<cislo;i++)
+{
+    vysledek =+ i;
+}
+Console.WriteLine(vysledek);
+
+
+
+
