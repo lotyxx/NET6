@@ -59,18 +59,19 @@ a = int.Parse(Console.ReadLine());
 b= int.Parse(Console.ReadLine());
 c = int.Parse(Console.ReadLine());
 
-if ((a > b) || (a > c))
+if ((a > b) && (a > c))
 {
     Console.WriteLine("a je nejvetsi {0}", a);
 }
-else if ((b > a) || (b > c))
+else if ((b > a) && (b > c))
 
-        {
-    Console.WriteLine("b je nevetsi {1}",b);
+{
+    Console.WriteLine("b je nevetsi {1}", b);
 }
-else ((c > a) || (c > b))
+else ((c > a) && (c > b))
         {
-    Console.WriteLine("c je nejvetsi {2}",c);
+    Console.WriteLine("c je nejvetsi {2}", c);
 }
+
 
 
