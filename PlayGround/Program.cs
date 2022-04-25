@@ -49,7 +49,7 @@ Console.ReadKey();
 /*podminky else if*/
 /*treti uloha*/
 
-
+/*
 Console.WriteLine("Zadej tri cisla");
 
  double a = double.Parse(Console.ReadLine());
@@ -71,6 +71,43 @@ else
 {
     Console.WriteLine("c je nejvetsi {0}", c);
 }
+*/
+
+Console.WriteLine("Zadej číslo");
+int cislo= int.Parse(Console.ReadLine());
+string vystup;
+
+switch (cislo)
+{
+    case 1:
+        Console.WriteLine("Pondělí");
+        break;
+    case 2:
+        Console.WriteLine("utery");
+        break;
+    case 3:
+        Console.WriteLine("streda");
+        break;
+    case 4:
+        Console.WriteLine("ctvrtek");
+        break;
+    case 5:
+        Console.WriteLine("Patek");
+        break;
+    case 6: Console.WriteLine("Sobota");
+        break;
+    case 7: Console.WriteLine("nedele");
+        break;
+    default:
+        vystup = "chyba";
+        break;
+
+        Console.ReadKey();
 
 
 
+
+
+
+
+}
