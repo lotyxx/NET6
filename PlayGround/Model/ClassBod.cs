@@ -24,14 +24,16 @@ namespace PlayGround.Model
         public void Print()
         {
             Console.WriteLine($"x : {X} y: {Y}");
+            Console.WriteLine(VypocetObdelnika());
         }
 
         public double VypocetObdelnika()
         {
-            double  obsah = p1.X * p2.X;
-            return obsah;
+            double  obsah = X * Y;
 
+            return obsah;
         }
+        
 
     }
 }

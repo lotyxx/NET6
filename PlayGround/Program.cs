@@ -358,6 +358,7 @@ p1.X = hodnotax * 2;
 
 Console.WriteLine(p1);
 p1.Print();
+double plocha = p1.VypocetObdelnika();
 
 
 
