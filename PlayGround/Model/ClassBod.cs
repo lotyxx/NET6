@@ -23,13 +23,19 @@ namespace PlayGround.Model
         public double X { get; set; }
         public double Y { get; set; }
 
+
+
+        public override string ToString()
+        {
+            return $"x: {X} y: {Y}";
+        }
         public void Print()
         {
             Console.WriteLine($"x : {X} y: {Y}");
-            Console.WriteLine(VypocetObdelnika());
+            Console.WriteLine(CalculateArea());
         }
 
-        public double VypocetObdelnika()
+        public double CalculateArea()
         {
             double obsah = Math.Abs(X) * Math.Abs(Y);
 
@@ -51,5 +57,7 @@ namespace PlayGround.Model
             else
                 return Quadrant.Error;
         }
+        
+
     }
 }

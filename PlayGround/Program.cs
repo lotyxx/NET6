@@ -340,20 +340,22 @@
 //  return x * 2;
 //}
 using PlayGround.Model;
+using PlayGround.Data;
 
 
 //Console.WriteLine("start");
  Person person1 = new Person("Jan", "Novák");
-
+ person1.ToString();
 Console.WriteLine(person1);
+//Person p = new Person("John Doe");
 
+
+//Console.WriteLine(ClassBod.GetQuadrant());
 
 //person1.DateOfBirth = new DateTime(1999, 12, 31);
-ClassBod classbod = new ClassBod(0, 0);
-Console.WriteLine(ClassBod.GetQuadrant());
 
 
-//ClassBod p1 = new ClassBod(15, 333.33);
+ClassBod p1 = new ClassBod(15, 333.33);
 ClassBod p1 = new ClassBod(333,-5000);
 ClassBod p2 = new ClassBod(0, 0);
 
@@ -368,9 +370,25 @@ p1.X = hodnotax * 2;
 
 Console.WriteLine(p1);
 p1.Print();
-double plocha = p1.VypocetObdelnika();
+double plocha = p1.CalculateArea();
+
+//for (int i = 0; i < 10; i++)
+//{
+    //ClassBod p = RandomPointGenerator.GetRandomPoint();
+   // Console.WriteLine(p);
+//}
+
+Console.WriteLine(RandomPointGenerator.GetCount());
 
 
+
+ClassBod p1 = RandomPointGenerator.GetRandomPoint();
+Console.WriteLine(p1);
+ClassBod p2 = new ClassBod(100, -100);
+Console.WriteLine(p2);
+
+ClassBod vetsi = Math2D.MaxAreaFromOrigin(p1, p2);
+Console.WriteLine($"vetsi bod ma obsah {vetsi}");
 
 
 
