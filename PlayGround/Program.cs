@@ -397,7 +397,7 @@ using PlayGround.Data;
 
 Car c = new Car();
 c.Spz = "AB1313";
-bool stolen = Kontrola.Overeni(c);
+bool stolen = Kontrola.Overeni(c); // CarManagement.IsCarStolen
 if (stolen)
     Console.WriteLine("Auto je kradene"); 
 else

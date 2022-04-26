@@ -9,6 +9,7 @@ namespace PlayGround.Model
     public class Car
     {
         public string Spz { get; set; }
+        public string SPZ { get; internal set; }
         public string Color { get; set; }
 
         public string Znacka { get; set; }

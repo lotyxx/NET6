@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayGround.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace PlayGround.Data
     internal class Kontrola
     {    
         
-        public static Overeni(Car car) 
+        public static bool Overeni( Car car) 
         {
             if (car.SPZ == "AB123")
                 return true;
