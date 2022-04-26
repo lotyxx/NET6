@@ -343,14 +343,24 @@ using PlayGround.Model;
 
 
 //Console.WriteLine("start");
-//Person person1 = new Person();
-//person1.Name = "Jan Novák";
+ Person person1 = new Person("Jan", "Novák");
+
+Console.WriteLine(person1);
+
+
 //person1.DateOfBirth = new DateTime(1999, 12, 31);
+ClassBod classbod = new ClassBod(0, 0);
+Console.WriteLine(ClassBod.GetQuadrant());
+
 
 //ClassBod p1 = new ClassBod(15, 333.33);
 ClassBod p1 = new ClassBod(333,-5000);
 ClassBod p2 = new ClassBod(0, 0);
+
+
 //Console.WriteLine($"x : {p1.X} y: {p1.Y}");
+
+
 
 double hodnotax = p1.X;
 double hodnotay = p1.Y;
@@ -359,6 +369,8 @@ p1.X = hodnotax * 2;
 Console.WriteLine(p1);
 p1.Print();
 double plocha = p1.VypocetObdelnika();
+
+
 
 
 
