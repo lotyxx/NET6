@@ -14,12 +14,13 @@ namespace PlayGround.Model
 
         public string spz()
             {
+
              }
         public string  barva()
         {
 
         }
-        public public double pocetkm ()
+        public  double pocetkm ()
          {
          }
         public string barva ()
