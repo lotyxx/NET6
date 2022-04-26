@@ -8,12 +8,20 @@ namespace PlayGround.Model
 {
     public class Car
     {
-        public string SPZ { get; set; }
+        public string Spz { get; set; }
         public string Barva { get; set; }
 
         public string Znacka { get; set; }
 
         public double NajeteKm { get; set; }
+
+
+        public static Kontrola ( string spz)
+         
+         
+        {          
+
+        }
 
 
     }
