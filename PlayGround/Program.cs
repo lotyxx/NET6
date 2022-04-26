@@ -393,10 +393,17 @@
 using PlayGround.Model;
 using PlayGround.Data;
 
-string spz;
 
-spz = 5SK3587;
-Car Spz = new car (spz);
+
+Car c = new Car();
+c.Spz = "AB1313";
+bool stolen = Kontrola.Overeni(c);
+if (stolen)
+    Console.WriteLine("Auto je kradene"); 
+else
+    Console.WriteLine("auto neni kradene");
+
+
 
 
 
