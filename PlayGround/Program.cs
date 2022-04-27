@@ -394,24 +394,32 @@ using PlayGround.Model;
 using PlayGround.Data;
 
 
-Car c = new Car();
-c.Spz = "AB1313";
-Kontrola.LoadStolenCars(Kontrola.stolenCarsPath);
-// CarManagement.IsCarStolen
-if (Kontrola.CanCheckStonelCars)
-{
-    bool stolen = Kontrola.IsCarStolen(c);
 
-    if (stolen)
-        Console.WriteLine("Auto je kradene!");
-    else
-        Console.WriteLine("auto je v poradku");
-}
-else
-{
-    Console.WriteLine("nelze kontrolovat auta, modul na kontrolu podle spz je rozbity");
-}
 
+//Car c = new Car();
+//c.SPZ = "AB1313";
+//Kontrola.LoadStolenCars(Kontrola.stolenCarsPath);
+//// CarManagement.IsCarStolen
+//if (Kontrola.CanCheckStonelCars)
+//{
+//    bool stolen = Kontrola.IsCarStolen(c);
+
+//    if (stolen)
+//        Console.WriteLine("Auto je kradene!");
+//    else
+//        Console.WriteLine("auto je v poradku");
+//}
+//else
+//{
+//    Console.WriteLine("nelze kontrolovat auta, modul na kontrolu podle spz je rozbity");
+//}
+
+//Car skodovka = new Car("FFFRRGG");
+//skodovka.AddKilometers(155);                //instancni metoda - vola se instance není to statická metoda
+Car auto1 = new Car("B0124578 ");
+Person owner1 = new Person("Marie", "Frycova");
+auto1.Owner = owner1;
+Console.WriteLine($"Auto s SPZ {auto1.SPZ} vlastní {auto1.Owner1.FirstName}");
 
 
 

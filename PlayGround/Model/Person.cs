@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayGround.Model
 {
-    internal class Person
+    public class Person
     {
         private string order;
         public Person(string firstname, string lastname)
