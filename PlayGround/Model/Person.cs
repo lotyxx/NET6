@@ -13,7 +13,7 @@ namespace PlayGround.Model
         {
             FirstName = firstname;
             LastName = lastname;
-            adress = new Adress();
+            
 
         }
 
@@ -28,13 +28,13 @@ namespace PlayGround.Model
                 return $"{FirstName} {LastName}";
             }
         }
-        
+        public Adress adress { get; set; } = new Adress();
         public override string ToString()
         {
             return $"{FirstName} {LastName}";
         }
 
-        public Adress adress { get; set; } = new Adress();
+        
 
     }
 }

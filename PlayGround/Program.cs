@@ -425,18 +425,62 @@ using PlayGround.Data;
 //Console.WriteLine(auto1.Owner.adress);
 
 // Linq
-int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0,256 };
+//int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0,256 };
 //Where filtruje podle toho jakeho chceme najit uzivatele
-var x = 0;  
-var d = 12.5;
-var s = "Ahoj";
-var result = cisla.Where(cislo => cislo >= -50 && cislo <= 50); 
+//var x = 0;  
+//var d = 12.5;
+//var s = "Ahoj";
+//var result = cisla.Where(cislo => cislo >= -50 && cislo <= 50); 
+// Oder by
+//var result = cisla.OrderByDescending(cislo => cislo);
+//najit jeden prvek
+//var cislo = cisla.Where(cislo => cislo == 126).FirstOrDefault();
+//Console.WriteLine(cislo);
+//foreach (var cislo in result)
+//{
+//    Console.WriteLine(cislo);
+//}
+//pocet kladnych cisel v kolekci
+//var cnt=cisla.Where(cislo => cislo > 0).Count();
+//Console.WriteLine(cnt);
+// vypiste suda cisla
+//var result = cisla.Where(c => c % 2 == 0);
+//aboslutni hodnota, Select
+//var abs = cisla.Select(cislo => Math.Abs(cislo));
+// z lihchych udelat suda, ale zachovat celou kolekci;
+//var result = cisla.Select(cislo => cislo % 2 == 0 ? cislo : cislo + 1);
+//var result = cisla.Select(cislo => TransformujSlozite(cislo));
 
-foreach (var cislo in result); 
-{
-    Console.WriteLine(cislo);
-}
+//foreach (var cislo in result)
+//{
+//    Console.WriteLine(cislo);
+//}
 
+//int TransformujSlozite (int cislo)
+//{
+//    if (cislo > 0)
+//    {
+//        return cislo + 10;
+//    }
+//    else if (cislo < 0)
+//    {
+//        return -10;
+//    }
+//    else
+//    {
+//        return cislo;
+//    }
 
+//List<Person> lide = new();
+//for (int i = 0; i<50; i++)
+//{
+//    lide.Add(RandomPersonGenerator.GetRandomPerson());
+//}
+//// osoby narozene pred rokem 1989
 
+//var result = lide.Where(osoba => osoba.DateOfBirth.Year < 1989).ToList();
+//foreach (var osoba int result)
+//   {
+//    Console.WriteLine(osoba + "" + osoba.DateOfBirth.ToString("yyy-MM-dd"));
+//   }
 

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayGround", "PlayGround\PlayGround.csproj", "{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayGround", "PlayGround\PlayGround.csproj", "{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
