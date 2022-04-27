@@ -394,17 +394,23 @@ using PlayGround.Model;
 using PlayGround.Data;
 
 
-
 Car c = new Car();
 c.Spz = "AB1313";
-bool stolen = Kontrola.Overeni(c); // CarManagement.IsCarStolen
-if (stolen)
-    Console.WriteLine("Auto je kradene"); 
+Kontrola.LoadStolenCars(Kontrola.stolenCarsPath);
+// CarManagement.IsCarStolen
+if (Kontrola.CanCheckStonelCars)
+{
+    bool stolen = Kontrola.IsCarStolen(c);
+
+    if (stolen)
+        Console.WriteLine("Auto je kradene!");
+    else
+        Console.WriteLine("auto je v poradku");
+}
 else
-    Console.WriteLine("auto neni kradene");
-
-
-
+{
+    Console.WriteLine("nelze kontrolovat auta, modul na kontrolu podle spz je rozbity");
+}
 
 
 
