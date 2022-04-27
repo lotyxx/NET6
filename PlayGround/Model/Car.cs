@@ -16,11 +16,13 @@ namespace PlayGround.Model
         // this.SPZ = SPZ;
         //}
         //public string Spz { get; set; } // vlastnosti auta
+        public Car(string spz)
+        {
+            SPZ = spz;
+        }
         #region properties
         public string SPZ { get; internal set; } = "";// vlastnosti auta // "" prazdny string vs Null
         public string Color { get; set; } = "nezadana"; // priradi manualne hodnotu vlastnosti;
-
-        public string Znacka { get; set; }
 
         public double NajeteKm { get; set; }
         public Person Owner { get; set; }

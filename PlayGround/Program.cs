@@ -416,10 +416,26 @@ using PlayGround.Data;
 
 //Car skodovka = new Car("FFFRRGG");
 //skodovka.AddKilometers(155);                //instancni metoda - vola se instance není to statická metoda
-Car auto1 = new Car("B0124578 ");
-Person owner1 = new Person("Marie", "Frycova");
-auto1.Owner = owner1;
-Console.WriteLine($"Auto s SPZ {auto1.SPZ} vlastní {auto1.Owner1.FirstName}");
+//Car auto1 = new Car("B0124578");
+//Person owner1 = new Person("Marie", "Frycova");
+
+//auto1.Owner = owner1;
+//Console.WriteLine($"Auto s SPZ {auto1.SPZ} vlastní {auto1.Owner.FirstName}");
+//auto1.Owner.adress.City = "Brno";
+//Console.WriteLine(auto1.Owner.adress);
+
+// Linq
+int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0,256 };
+//Where filtruje podle toho jakeho chceme najit uzivatele
+var x = 0;  
+var d = 12.5;
+var s = "Ahoj";
+var result = cisla.Where(cislo => cislo >= -50 && cislo <= 50); 
+
+foreach (var cislo in result); 
+{
+    Console.WriteLine(cislo);
+}
 
 
 

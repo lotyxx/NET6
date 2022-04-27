@@ -8,12 +8,16 @@ namespace PlayGround.Model
 {
     public class Adress
     {
-        public string Street { get; set; }
-        public string City  { get; set; }
-        public double PostalCode { get; set; }
-        public string Country { get; set; }
+        public string Street { get; set; } = "";
+        public string City { get; set; } = "";
+        public double PostalCode { get; set; } 
+        public string Country { get; set; } = "CZ";
 
 
+        public override string ToString()
+        {
+            return $"{Street}, {City} {PostalCode}, {Country}";
+        }
 
 
         public Adress ( string street, string city, double postalcode, string country)
@@ -23,6 +27,11 @@ namespace PlayGround.Model
             PostalCode = postalcode;
             Country = country;
                
+
+        }
+
+        public Adress ()
+        {
 
         }
 

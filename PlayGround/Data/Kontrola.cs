@@ -64,9 +64,6 @@ namespace PlayGround.Data
             IsLoadedStolenCars = true;
         }
 
-        internal static bool IsCarStolen(Car c)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
