@@ -13,11 +13,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Microsoft.Graph;
-using Bogus;
-using DocumentFormat.OpenXml.Bibliography;
-using DocumentFormat.OpenXml.Office2013.Word;
-using DocumentFormat.OpenXml.Office2019.Excel.ThreadedComments;
 
 namespace WpfApp1
 {
@@ -32,7 +27,7 @@ namespace WpfApp1
             txtFirstName.Text = person.FirstName;
             txtLastName.Text = person.LastName;
             txtDateOfBirth.Text = person.DateOfBirth.ToString();
-            txtAdress.Text = person.Address.ToString();
+            txtAdress.Text = person.Adress.ToString();
         }
     }
 }

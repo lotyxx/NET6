@@ -390,8 +390,6 @@
 //ClassBod vetsi = Math2D.MaxAreaFromOrigin(p1, p2);
 //Console.WriteLine($"vetsi bod ma obsah {vetsi}");
 
-using PlayGround.Model;
-using PlayGround.Data;
 
 
 
@@ -483,4 +481,6 @@ using PlayGround.Data;
 //   {
 //    Console.WriteLine(osoba + "" + osoba.DateOfBirth.ToString("yyy-MM-dd"));
 //   }
+using PlayGround.Model;
+using PlayGround.Data;
 

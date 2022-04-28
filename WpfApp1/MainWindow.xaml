@@ -6,15 +6,16 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
          Title="Lide" Height="300" Width="400">
-    <StackPanel>
+    <StackPanel Background="#FFF9F7F7">
         <StackPanel Orientation="Horizontal">
-            <Button x:Name="btnLoad" Click="BtnLoad_Click" Content="VYGENERUJ DATASET" Width="150" Height="25" Margin="5,10" />
+            <Button x:Name="btnLoad" Click="btnLoad_Click" Content="VYGENERUJ DATASET" Width="150" Height="25" Margin="5,10" />
             <Button x:Name="btnDetail" Click="btnDetail_Click" Content="Detail" Margin="5,10" Width="70"/>
+            <Button x:Name="btnLoadAPI" Click="btnLoadAPI_Click" Content="Stahni dataset" Margin="5,10" Width="90" />
         </StackPanel>
 
         <DataGrid  x:Name="dgDataset" Margin="5" />
         <TextBlock Text="INFO" x:Name="txbInfo" Margin="5" />
-        
+
 
     </StackPanel>
 </Window>

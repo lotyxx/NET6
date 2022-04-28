@@ -1,47 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace PlayGround.Model
-{
-    /// <summary>
-    /// Reprezentuje jedno auto v programu.
-    /// </summary>
-    public class Car
-    {
-        // public Car (string SPZ)
-        //{
-        // this.SPZ = SPZ;
-        //}
-        //public string Spz { get; set; } // vlastnosti auta
-        public Car(string spz)
-        {
-            SPZ = spz;
-        }
-        #region properties
-        public string SPZ { get; internal set; } = "";// vlastnosti auta // "" prazdny string vs Null
-        public string Color { get; set; } = "nezadana"; // priradi manualne hodnotu vlastnosti;
+//namespace PlayGround.Model
+//{
+//    /// <summary>
+//    /// Reprezentuje jedno auto v programu.
+//    /// </summary>
+//    public class Car
+//    {
+//        // public Car (string SPZ)
+//        //{
+//        // this.SPZ = SPZ;
+//        //}
+//        //public string Spz { get; set; } // vlastnosti auta
+//        public Car(string spz)
+//        {
+//            SPZ = spz;
+//        }
+//        #region properties
+//        public string SPZ { get; internal set; } = "";// vlastnosti auta // "" prazdny string vs Null
+//        public string Color { get; set; } = "nezadana"; // priradi manualne hodnotu vlastnosti;
 
-        public double NajeteKm { get; set; }
-        public Person Owner { get; set; }
-       # endregion
+//        public double NajeteKm { get; set; }
+//        public Person Owner { get; set; }
+//       # endregion
 
-        public Car()
-        {
+//        public Car()
+//        {
 
-        }
-        public void AddKilometers (double km)
-        {
-            NajeteKm += km;
-        }
+//        }
+//        public void AddKilometers (double km)
+//        {
+//            NajeteKm += km;
+//        }
         
 
-       public void AddOneKm()
-        {
-            NajeteKm++;
-        }
+//       public void AddOneKm()
+//        {
+//            NajeteKm++;
+//        }
 
-    }
-}
+//    }
+//}

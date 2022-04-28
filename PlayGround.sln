@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayGround", "PlayGround\PlayGround.csproj", "{7D87570A-FC8F-4A9E-AFC7-13C4C2240CFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "APi\WebAPI.csproj", "{40F3817F-E8A5-412E-B342-6C660E7EF108}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF7C9269-A1E2-449B-BB52-AE231BDAE8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F3817F-E8A5-412E-B342-6C660E7EF108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F3817F-E8A5-412E-B342-6C660E7EF108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F3817F-E8A5-412E-B342-6C660E7EF108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F3817F-E8A5-412E-B342-6C660E7EF108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

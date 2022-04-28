@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PlayGround.Model
 {
     public class Person
@@ -23,6 +24,8 @@ namespace PlayGround.Model
 
         }
 
+        public Adress Adress { get; set; } = new Adress();
+        public DateTime DateOfBirth { get; set; }
 
         public string FirstName { get; set; } //zapis a cteni get a set
         public string LastName { get; set; }
@@ -34,8 +37,7 @@ namespace PlayGround.Model
                 return $"{FirstName} {LastName}";
             }
         }
-        public Adress Adress { get; set; } = new Adress();
-        public DateTime DateOfBirth { get; set; }
+        
 
 
         public override string ToString()
