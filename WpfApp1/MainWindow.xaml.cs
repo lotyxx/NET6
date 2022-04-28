@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PlayGround.Model;
+using PlayGround.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfApp1
 {
     /// <summary>
@@ -25,15 +28,29 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            txtbInfo.Text = DateTime.Now.ToString();
-        }
-
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
-            PeopleDataset.GeneratePeope(20);
+            PeopleDataset.GeneratePeople(20);
+
             dgDataset.ItemsSource = PeopleDataset.People;
-           
+        }
+
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
+        {
+            var person = (Person)dgDataset.SelectedItem;
+
+            if (person != null)
+            {
+                PersonDetailWindow pdw = new PersonDetailWindow(person);
+                pdw.Show();
+            }
+            else
+            {
+                // nemam nic vybraneho
+
+
+            }
+
+        }
     }
 }

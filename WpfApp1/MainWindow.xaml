@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+         Title="Lide" Height="300" Width="400">
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Button x:Name="btnLoad" Click="btnLoad_Click" Content="VYGENERUJ DATASET" Width="150" Height="25" Margin="10" />
+            <Button x:Name="btnLoad" Click="BtnLoad_Click" Content="VYGENERUJ DATASET" Width="150" Height="25" Margin="5,10" />
+            <Button x:Name="btnDetail" Click="btnDetail_Click" Content="Detail" Margin="5,10" Width="70"/>
         </StackPanel>
 
-        <DataGrid x:Name="dqDataset" />
-        <TextBlock Text="INFO O LIDECH" x:Name="txbInfo" />
+        <DataGrid  x:Name="dgDataset" Margin="5" />
+        <TextBlock Text="INFO" x:Name="txbInfo" Margin="5" />
         
 
     </StackPanel>

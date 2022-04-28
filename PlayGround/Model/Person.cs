@@ -8,11 +8,17 @@ namespace PlayGround.Model
 {
     public class Person
     {
-        private string order;
-        public Person(string firstname, string lastname)
+
+        public Person()
+        {
+
+        }
+        public string order;
+        public  Person(string firstname, string lastname)
         {
             FirstName = firstname;
             LastName = lastname;
+
             
 
         }
@@ -20,7 +26,7 @@ namespace PlayGround.Model
 
         public string FirstName { get; set; } //zapis a cteni get a set
         public string LastName { get; set; }
-        DateTime DateOfBirth { get; set; }
+        
         public string FullName
         {
             get
@@ -28,7 +34,10 @@ namespace PlayGround.Model
                 return $"{FirstName} {LastName}";
             }
         }
-        public Adress adress { get; set; } = new Adress();
+        public Adress Adress { get; set; } = new Adress();
+        public DateTime DateOfBirth { get; set; }
+
+
         public override string ToString()
         {
             return $"{FirstName} {LastName}";

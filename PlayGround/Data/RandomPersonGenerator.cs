@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PlayGround.Model;
+using PlayGround.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +27,7 @@ namespace PlayGround.Data
 
             var person = new Person()
             {
-                Address = new Adress() { City = cities.OrderBy(x => rnd.Next()).First(), Street = streets.OrderBy(x => rnd.Next()).First() },
+                Adress = new Adress() { City = cities.OrderBy(x => rnd.Next()).First(), Street = streets.OrderBy(x => rnd.Next()).First() },
                 DateOfBirth = new DateTime(years.OrderBy(x => rnd.Next()).First(), months.OrderBy(x => rnd.Next()).First(), days.OrderBy(x => rnd.Next()).First()),
                 FirstName = maleFirstNames.OrderBy(x => rnd.Next()).First(),
                 LastName = maleLastNames.OrderBy(x => rnd.Next()).First(),
@@ -33,7 +35,7 @@ namespace PlayGround.Data
 
             var person2 = new Person()
             {
-                Address = new Adress() { City = cities.OrderBy(x => rnd.Next()).First(), Street = streets.OrderBy(x => rnd.Next()).First() },
+                Adress = new Adress() { City = cities.OrderBy(x => rnd.Next()).First(), Street = streets.OrderBy(x => rnd.Next()).First() },
                 DateOfBirth = new DateTime(years.OrderBy(x => rnd.Next()).First(), months.OrderBy(x => rnd.Next()).First(), days.OrderBy(x => rnd.Next()).First()),
                 FirstName = femaleFirstNames.OrderBy(x => rnd.Next()).First(),
                 LastName = femaleLastNames.OrderBy(x => rnd.Next()).First(),

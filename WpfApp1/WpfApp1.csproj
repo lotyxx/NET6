@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.16.0" />
+    <PackageReference Include="Microsoft.Graph" Version="4.25.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PlayGround\PlayGround.csproj" />
   </ItemGroup>
 

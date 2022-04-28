@@ -1,4 +1,5 @@
 ﻿using PlayGround.Model;
+using PlayGround.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace WpfApp1
         public static List <Person> People = new List<Person> ();
         public static void GeneratePeople (int cnt)
         {
-            for(int i = 0; i < cnt; i++)
+            People = new List<Person>();
+            for (int i = 0; i < cnt; i++)
             {
                 People.Add(RandomPersonGenerator.GetRandomPerson());
             }

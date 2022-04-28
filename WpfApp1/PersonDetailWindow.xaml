@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Osoba detail" Height="450" Width="500">
     <Grid>
-
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" Text="Jmeno" VerticalAlignment="Top" Width="299" FontSize="24"/>
         <Label Content="Křestní jméno:" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" FontSize="20" Width="299"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="10,141,0,0" TextWrapping="Wrap" Text="Prijmeni" VerticalAlignment="Top" Width="299" FontSize="24"/>
@@ -16,5 +15,6 @@
         <Label Content="Datum narození:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="20" Width="299"/>
         <TextBox x:Name="txtAdress" HorizontalAlignment="Left" Margin="10,331,0,0" TextWrapping="Wrap" Text="Adresa.." VerticalAlignment="Top" Width="299" FontSize="24"/>
         <Label Content="Adresa:" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" FontSize="20" Width="299"/>
+        
     </Grid>
 </Window>
